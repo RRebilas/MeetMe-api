@@ -12,12 +12,3 @@ class MeetMeApplication
 fun main(args: Array<String>) {
 	runApplication<MeetMeApplication>(*args)
 }
-
-@RequestMapping("/test")
-@RestController
-class TestController {
-	@GetMapping
-	fun testGet(): String {
-		return "test"
-	}
-}
